@@ -11,15 +11,15 @@ $(function () {
             response.data.forEach(user => {
                 $('#data').append(
                     `<tr>
-                <td>${user.id}</td>
-                <td>${user.title}</td>
-                <td>${user.firstName}</td>
-                <td>${user.lastName}</td>
-                <td>${user.email}</td>
-                <td>
+                <td class="align-middle">${user.id}</td>
+                <td class="align-middle">${user.title}</td>
+                <td class="align-middle">${user.firstName}</td>
+                <td class="align-middle">${user.lastName}</td>
+                <td class="align-middle">${user.email}</td>
+                <td class="align-middle">
                     <img src="${user.picture}" alt="">
                 </td>
-                <td>
+                <td class="align-middle">
                     <button type="button" class="btn btn-primary detail" data-toggle="modal" data-target="#${user.id}">
                         Detay
                     </button>
